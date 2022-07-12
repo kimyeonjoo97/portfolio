@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BOOK</title>
+</head>
+<body>
+    <header>
+
+        <div class="hWrap">
+
+            <h1><a href="#">
+                <img src="images/logo.png">
+            </a></h1>
+
+            <button class="btnNav">
+                <span class="s1"></span>
+                <span class="s2"></span>
+                <span class="s3"></span>
+            </button> 
+
+            <nav>
+
+            <button class="close">
+                X
+            </button>
+
+            <ul class="gnb">
+                <li><a href="#">신작</a></li>
+                <li><a href="#">베스트 셀러</a></li>
+                <li><a href="#">카테고리</a></li>
+                <li><a href="#">내서재</a></li>
+            </ul>
+
+            </nav>
+
+            <ul class="util">
+                <li><a href="#"><img src="images/a.png"></a></li>
+                <li><a href="#"><img src="images/b.png"></a></li> 
+            </ul>
+
+        </div><!-- hWrap -->
+       
+    </header>
+
+    <section class="main">
+    <div class="row row1">
+
+
+        <h3><span>신작</span>
+            <a href="#">더보기></a></h3>
+
+        
+        <div class="con">
+            <div class="item"><a href="#"><img src="images/a1.jfif"></a></div>
+            <div class="item"><a href="#"><img src="images/a2.jfif"></a></div>
+            <div class="item"><a href="#"><img src="images/a3.jfif"></a></div>
+            <div class="item"><a href="#"><img src="images/a4.jfif"></a></div>
+        </div><!-- con -->
+        <div class="pager">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div><!-- pager -->
+    </div><!-- row1 -->
+
+    <div class="row row2">
+        <h3><span>베스트 셀러</span>
+            <a href="#">더보기></a></h3>
+
+        <div class="con">
+            <div class="item"><a href="#"><img src="images/1.jfif"></a></div>
+            <div class="item"><a href="#"><img src="images/2.jfif"></a></div>
+            <div class="item"><a href="#"><img src="images/3.jfif"></a></div>
+            <div class="item"><a href="#"><img src="images/4.jfif"></a></div>
+        </div><!-- con -->
+        <div class="pager">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div><!-- pager -->
+    </div><!-- row2 -->
+
+    <div class="row row3">
+        <h3><span>카테고리</span>
+            <a href="#">더보기></a></h3>
+
+        <div class="con">
+            <ul class="text">
+                <li><a href="#">소설</a></li>
+                <li><a href="#">인문</a></li>
+                <li><a href="#">경제</a></li>
+                <li><a href="#">에세이</a></li>
+                <li><a href="#">만화</a></li>
+            </ul>
+        </div><!-- con -->
+        <div class="pager">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div><!-- pager -->
+    </div><!-- row3 -->
+    
+    <div class="row row4">
+        <h3><span>내서재</span>
+            <a href="#">더보기></a></h3>
+
+        <div class="con">
+            <div class="item"><a href="#"><img src="images/b1.jfif"></a></div>
+            <div class="item"><a href="#"><img src="images/b2.jfif"></a></div>
+            <div class="item"><a href="#"><img src="images/b3.jfif"></a></div>
+            <div class="item"><a href="#"><img src="images/b4.jpg"></a></div>
+        </div><!-- con -->
+        <div class="pager">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div><!-- pager -->
+    </div><!-- row4 -->
+
+    </section><!-- main -->
+
+    <footer>
+    
+        <ul class="txt">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">내서재</a></li>
+            <li><a href="#">캘린더</a></li>
+            <li><a href="#">설정</a></li>
+        </ul>
+       
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+
+$('.btnNav').on('click',function(){
+    $('nav').addClass('open');
+
+});
+
+
+$('.close').on('click',function(){
+    $('nav').removeClass('open');
+})
+    </script>
+
+</body>
+</html>
